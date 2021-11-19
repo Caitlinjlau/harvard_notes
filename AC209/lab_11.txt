@@ -1,0 +1,6 @@
+Lab 11 Notes  11/19/21
+
+- Permutation importance: looking at feature importance from the trees themselves using the ELI5 package. 
+-ELI5 package is really good at showing the weights and features of different models 
+
+- Every single model except the adaboost model say that Age is the most important factor
