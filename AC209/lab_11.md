@@ -30,3 +30,18 @@
 #### Surrogate explainer model 
 - Black box model and we train an interpretable model to explain the predictions of teh Black box model (the response is the prediction of the original Black box model)
 
+#### LIME
+- locally interpretable model explainations
+- what is driving the model's prediction "around this area?"
+- weights generated points based on proximited
+- fit weighted model 
+- explain the prediction by interpreting the local model
+- shows the boundaries of black box models.
+- size of the markers is the proximity.
+- Try to find g (the model) out of a set of interpretable models 
+	- minimize the loss function: related to the predictions of the original model. In order to weight by a guassian. 
+- The $$omega$$ stands for a regularization function that penalizes the non-important one. 
+- "Sparse model" = similar to ridge/lasso "squashes to zero"
+- the LIME package is model agnostic so we can use it for tablular, image, or text data.
+	-LimeTabularExplainer
+- feed in the regular training data in order to generate the synthetic data. 
