@@ -45,3 +45,4 @@
 - the LIME package is model agnostic so we can use it for tablular, image, or text data.
 	-LimeTabularExplainer
 - feed in the regular training data in order to generate the synthetic data. 
+- LIME is using a decision tree under the hood in order to interpret the model.
