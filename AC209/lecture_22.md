@@ -26,4 +26,38 @@
 	- For all people admitted only call less than half of people as high urgency. 
 	- The conservatives want to hide the severity of the crisis in Brazil.
 	
- 
+## Scenario 2 
+- Germany wants to be extra careful and classify as many people as possible
+- TPR <= 0.85 
+
+## Scenario 3 
+- India
+- Only 1 million beds left, but 2 million people suspected of having the disease. 
+- TPR + FPR <= 1
+- 2 million people suspected have covid only 1 million beds left?
+	- TPR* 2 million 
+
+## Which model
+- Logistic Regression
+- KNN Classification
+- First thing we do is the evaluate the model 
+- **Use SMOTE**
+	- SMOTE stands for Synthetic Minority Oversampling Technique. This is a statistical technique for increasing the number of cases in your dataset in a balanced way.
+- **STEPS**
+	- regularization, hyper paramter
+	- fill out SMOTE form then decide which model to use
+	- Then play with the trhesholds
+	- get the ROC curves
+	- Then decide which model to use.
+| Classification Metric | Formula                        | Logistic Regression | KNN |
+| --------------------  | ------------------------------ | ------------------- | --- |
+| Accuracy              |                                |                     |     |
+| Sensitivity           |                                |                     |     |
+| Specifcity            |                                |                     |     |
+| Precision             |                                |                     |     |
+| F1 Score              |                                |                     |     |
+
+| ............. | Predicted Low | Predicted High |
+| Low           | True Negative | False Positive |
+| High          | False Negative | True Positive | 
+
