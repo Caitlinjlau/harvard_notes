@@ -49,13 +49,15 @@
 	- Then play with the trhesholds
 	- get the ROC curves
 	- Then decide which model to use.
+
+
 | Classification Metric | Formula                        | Logistic Regression | KNN |
 | --------------------  | ------------------------------ | ------------------- | --- |
-| Accuracy              |                                |                     |     |
-| Sensitivity           |                                |                     |     |
-| Specifcity            |                                |                     |     |
-| Precision             |                                |                     |     |
-| F1 Score              |                                |                     |     |
+| Accuracy              |                 .              |    .                |  .  |
+| Sensitivity           |            .                   |          .          |   . |
+| Specifcity            |             .                  |         .           |  .  |
+| Precision             |            .                   |          .          | .   |
+| F1 Score              |             .                  |         .           |  .  |
 
 | ............. | Predicted Low | Predicted High |
 | Low           | True Negative | False Positive |
