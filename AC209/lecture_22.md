@@ -63,3 +63,61 @@
 | Low           | True Negative | False Positive |
 | High          | False Negative | True Positive | 
 
+
+- It is hard to make a decision just looking at Accuracy, Sensitivity, precision 
+- FPR acc Log reg 50
+- FPR acc KNN 41
+- F1 score Log reg 67
+- F1 score for knn = 66
+- Precision 61
+- Precision 60
+
+### Grid Search 
+- #clf is the classifier model
+- # give model, parameters, number of cv and it does it for you
+- #cross validate over 
+- c for log reg is the regularization c = 1/reg-strength
+- c for knn is the best k 
+- c is the hyper parameter
+
+### Bayes Threshold 
+- threshold we can play with that.
+- Get your ROC curve 
+	- ROC Curve is when we change our threshold how do our true positive/ false positive rates change 
+- Get ROC curve for the two models 
+
+#### Sensitivity 
+- **aka Recall or TPR**
+- TPR = recall = TP/OP = TP / (TP +FN)
+- The Hit Rate: The fraction of observed positives (1s) the classifier gets right, or how many true positives were recalled. 
+- Maximizing recall towards 1 = keep down false negative rate.
+
+#### Specificity 
+- **Specificity or True Negative Rate**
+- $TNR = \frac {TN} {ON} = TN / (FP + TN)$
+
+#### Precision
+- **Positive Predicted Value**
+- tells you how many predicted positive (1) hits were truly positive
+- Precision = TP / PP = TP / (TP+FP)
+
+#### F1 Score 
+- Harmonic Mean of Precision and Recall. 
+- Tries to minimize the false positive and the false negatives at the same time.
+- F1 = (2 * recall * Precision) / (recall + Precision)
+
+## ROC interpretation
+- We have ROC curves 
+- Germany (TPR > .85)
+	- LOG REG
+	- Lowest FPR, but needs to get a model with above threshold.
+- Brazilian (TPR+ FPR < 0.5)
+	- Get the lower curve
+	- Max TPR and Min FPR while being below the red threshold
+	- Logistic Regression. 
+- India ()
+	- Max TPR and Min FPR
+	- KNN
+
+- The utility of the interpretation and decisoin on which model are different for these 3 particular scenarios.
+- ROC is three dimensional because we can change our thresholds and find the true positive rate
